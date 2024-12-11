@@ -34,19 +34,36 @@ if (isset($_GET['id'])) {
 
   <?php if (isset($row)): ?>
     <!-- Mostrar detalles del cliente específico -->
-    <div class="bg-white p-4 shadow-md rounded">
-      <h3 class="text-xl font-semibold">Detalles del Empleado</h3>
-      <p><span class='font-bold text-blue-700'>ID: </span><?php echo htmlspecialchars($row['people_id']); ?></p>
-      <p><span class='font-bold text-blue-700'>Nombre: </span><?php echo htmlspecialchars($row['name']); ?></p>
-      <p><span class='font-bold text-blue-700'>Apellidos: </span><?php echo htmlspecialchars($row['surname']); ?></p>
-      <p><span class='font-bold text-blue-700'>Email: </span><?php echo htmlspecialchars($row['email']); ?></p>
-      <p><span class='font-bold text-blue-700'>Telefono: </span><?php echo htmlspecialchars($row['phone_number']); ?></p>
-      <p><span class='font-bold text-blue-700'>Direccion: </span><?php echo htmlspecialchars($row['address']); ?></p>
-      <p><span class='font-bold text-blue-700'>Tipo de documento: </span><?php echo htmlspecialchars($row['document_type']); ?></p>
-      <p><span class='font-bold text-blue-700'>Numero de documento: </span><?php echo htmlspecialchars($row['document_number']); ?></p>
-      <p><span class='font-bold text-blue-700'>Profesion: </span><?php echo htmlspecialchars($row['job_title']); ?></p>
-      <p><span class='font-bold text-blue-700'>Salario: </span><?php echo htmlspecialchars($row['salary']); ?></p>
-      <p><span class='font-bold text-blue-700'>Departamento: </span><?php echo htmlspecialchars($row['department']); ?></p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div class="bg-white p-4 shadow-md rounded">
+        <h3 class="text-xl font-semibold">Detalles del Empleado</h3>
+        <p><span class='font-bold text-blue-700'>ID: </span><?php echo htmlspecialchars($row['people_id']); ?></p>
+        <p><span class='font-bold text-blue-700'>Nombre: </span><?php echo htmlspecialchars($row['name']); ?></p>
+        <p><span class='font-bold text-blue-700'>Apellidos: </span><?php echo htmlspecialchars($row['surname']); ?></p>
+        <p><span class='font-bold text-blue-700'>Email: </span><?php echo htmlspecialchars($row['email']); ?></p>
+        <p><span class='font-bold text-blue-700'>Telefono: </span><?php echo htmlspecialchars($row['phone_number']); ?></p>
+        <p><span class='font-bold text-blue-700'>Direccion: </span><?php echo htmlspecialchars($row['address']); ?></p>
+        <p><span class='font-bold text-blue-700'>Tipo de documento: </span><?php echo htmlspecialchars($row['document_type']); ?></p>
+        <p><span class='font-bold text-blue-700'>Numero de documento: </span><?php echo htmlspecialchars($row['document_number']); ?></p>
+        <p><span class='font-bold text-blue-700'>Profesion: </span><?php echo htmlspecialchars($row['job_title']); ?></p>
+        <p><span class='font-bold text-blue-700'>Salario: </span><?php echo htmlspecialchars($row['salary']); ?></p>
+        <p><span class='font-bold text-blue-700'>Departamento: </span><?php echo htmlspecialchars($row['department']); ?></p>
+      </div>
+      <div class="bg-white p-4 shadow-md rounde">
+        <h3 class="text-xl font-semibold">Detalles del Empleado</h3>
+        <p><span class='font-bold text-blue-700'>ID: </span><?php echo htmlspecialchars($row['people_id']); ?></p>
+        <p><span class='font-bold text-blue-700'>Nombre: </span><?php echo htmlspecialchars($row['name']); ?></p>
+        <p><span class='font-bold text-blue-700'>Apellidos: </span><?php echo htmlspecialchars($row['surname']); ?></p>
+        <p><span class='font-bold text-blue-700'>Email: </span><?php echo htmlspecialchars($row['email']); ?></p>
+        <p><span class='font-bold text-blue-700'>Telefono: </span><?php echo htmlspecialchars($row['phone_number']); ?></p>
+        <p><span class='font-bold text-blue-700'>Direccion: </span><?php echo htmlspecialchars($row['address']); ?></p>
+        <p><span class='font-bold text-blue-700'>Tipo de documento: </span><?php echo htmlspecialchars($row['document_type']); ?></p>
+        <p><span class='font-bold text-blue-700'>Numero de documento: </span><?php echo htmlspecialchars($row['document_number']); ?></p>
+        <p><span class='font-bold text-blue-700'>Profesion: </span><?php echo htmlspecialchars($row['job_title']); ?></p>
+        <p><span class='font-bold text-blue-700'>Salario: </span><?php echo htmlspecialchars($row['salary']); ?></p>
+        <p><span class='font-bold text-blue-700'>Departamento: </span><?php echo htmlspecialchars($row['department']); ?></p>
+      </div>
     </div>
 
     <a href='./update.php?id=<?php echo $row['people_id']; ?>' class='text-blue-500 hover:text-black'>

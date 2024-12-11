@@ -54,8 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </button>
       </div>
     </form>
-    <a href="../clientes.php" class="inline-block shadow border rounded bg-green-500 font-bold text-white py-2 px-4 mx-6 hover:bg-green-700 text-center">
-      Salir
+    <a href='../Ordenes/create.php?id=" . $row['vehicle_id'] . "' class="inline-block shadow border rounded bg-green-500 font-bold text-white py-2 px-4 mx-6 hover:bg-green-700 text-center">
+      Asignar
     </a>
   </div>
 <?php include('../includes/footer.php'); ?>

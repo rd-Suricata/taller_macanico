@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
             WHERE p.people_id = '$id'"; // Asegúrate de que $id esté en comillas si es un valor numérico
 
   // Ejecutar la consulta
-  $result = mysqli_query($conn, $query); // --> linea 32
+  $result = mysqli_query($conn, $query);
 
   // Verificar si se encontró una fila
   if ($result && mysqli_num_rows($result) == 1) {

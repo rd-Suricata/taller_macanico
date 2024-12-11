@@ -57,4 +57,3 @@ CREATE TABLE vehicle_status (
   FOREIGN KEY (vehicle_id) REFERENCES vehicle(vehicle_id)
 )
 
-

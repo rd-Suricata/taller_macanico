@@ -97,8 +97,6 @@ if (!$result) {
                 echo "<td class='py-3 px-6 text-left'>" . htmlspecialchars($row["document_type"]) . "</td>";
                 echo "<td class='py-3 px-6 text-left'>" . htmlspecialchars($row["document_number"]) . "</td>";
                 echo "<td class='py-3 px-6 text-left'>" . htmlspecialchars($row["number_plate"]) . "</td>";
-                
-                // Botones de Editar y Eliminar con iconos de Font Awesome y Tailwind CSS
                 echo "<td class='py-3 px-6 text-left'>
                         <a href='views/clientview/client.php?id=" . $row['people_id'] . "' class='text-green-500 hover:text-blue-700'>
                             <i class='fas fa-plus text-3xl'></i>

@@ -15,7 +15,7 @@
             <div class="bg-white p-4 rounded shadow">
                 <h3 class="text-xl font-bold mb-2">Órdenes de Trabajo</h3>
                 <p>Crear y gestionar órdenes de trabajo.</p>
-                <a href="ordenes.php" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver Órdenes</a>
+                <a href="Ordenes/view.php" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver Órdenes</a>
             </div>
             <div class="bg-white p-4 rounded shadow">
                 <h3 class="text-xl font-bold mb-2">Inventario</h3>
